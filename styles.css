@@ -1,0 +1,258 @@
+html {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    background-image: linear-gradient(to top right, rgb(0, 0, 135), rgb(178, 213, 255));
+    font-family: Arial, Helvetica, sans-serif;
+    background-attachment: fixed;
+}
+
+.head {
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 28px;
+}
+
+.main {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+
+.main-top {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.main-top-left {
+    background-color: rgba(180, 180, 180, 0.8);
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+    border-radius: 10px;
+}
+
+.card-info {
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 15px;
+    border-bottom-style: solid;
+    padding-bottom: 5px;
+}
+
+#id-area:hover {
+    cursor: default;
+}
+
+#id-area:focus {
+    outline: none;
+}
+
+.left1,
+.right1 {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    margin-top: 0;
+}
+
+.enter-info,
+.show-info {
+    border-radius: 10px;
+    border-width: 0;
+    width: 50%;
+    font-size: 15px;
+}
+
+.enter-info:focus {
+    outline-color: rgb(75, 75, 75);
+}
+
+.enter-info,
+.enter-info::placeholder {
+    font-size: 15px;
+    padding-left: 3px;
+}
+
+.add-button,
+.e-button {
+    border-radius: 10px;
+    border: none;
+    background-color: white;
+}
+
+.add-button:hover,
+.e-button:hover {
+    cursor: pointer;
+}
+
+.add-button:active,
+.e-button:active,
+.search-button:active {
+    background-color: rgb(100, 100, 100);
+}
+
+.e-button {
+    visibility: hidden;
+}
+
+.main-top-right {
+    background-color: rgba(180, 180, 180, 0.8);
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+    border-radius: 10px;
+}
+
+.show-info:focus {
+    outline: none;
+}
+
+.show-info:hover {
+    cursor: default;
+}
+
+.main-bottom {
+    margin-top: 30px;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+table {
+    margin-bottom: 30px;
+}
+
+.table-info {
+    background-color: aliceblue;
+}
+
+.table-row {
+    background-color: darkgray;
+}
+
+tr,
+th {
+    padding: 15px;
+    height: 20px !important;
+}
+
+tr:first-of-type,
+tr:last-of-type {
+    border-radius: 10px;
+}
+
+.delete-button,
+.edit-button {
+    background: none;
+    border: none;
+}
+
+.select-cell,
+.delete-cell,
+.edit-cell {
+    padding: 0;
+}
+
+.delete-button,
+.edit-button {
+    width: 70%;
+    height: 70%;
+}
+
+.select:hover,
+.delete-button:hover,
+.edit-button:hover {
+    cursor: pointer;
+}
+
+.select {
+    width: 20px;
+    height: 20px;
+}
+
+.fi {
+    font-size: 20px;
+}
+
+.add-row-1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20px !important;
+}
+
+.add-row-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20px !important;
+}
+
+.search {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: 1.5px;
+}
+
+.searchbar {
+    width: 27.6%;
+    border-top-left-radius: 10px;
+    height: 40px;
+    border: none;
+}
+
+.search-button {
+    width: auto;
+    height: 42px;
+    background-color: #fff;
+    border: none;
+    border-top-right-radius: 10px;
+}
+
+.search-button:hover {
+    cursor: pointer;
+}
+
+
+@media(max-width: 870px) {
+    .main {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .main-top {
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+    }
+
+    .main-top-left,
+    .main-top-right {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .main-bottom {
+        width: 80%;
+    }
+
+    .mytable {
+        width: 100%;
+    }
+}

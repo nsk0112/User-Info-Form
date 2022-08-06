@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Personal Information Table</title>
+    <link href="styles.css" rel="stylesheet">
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-bold-rounded/css/uicons-bold-rounded.css'>
+    <link rel="icon" type="image/x-icon"
+        href="https://www.flaticon.com/svg/vstatic/svg/3917/3917796.svg?token=exp=1658748048~hmac=7b4fc4e0ee55375f4ad6a24f3ed9996c">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+    <div class="head">
+        <p class="title">Personal Information Table</p>
+    </div>
+    <div class="main">
+        <div class="main-top">
+            <div class="main-top-left" id="">
+                <form>
+                    <p class="card-info">Personal ID Card</p>
+                    <div class="left1">
+                        <p id="name-label" class="label">Name *</p>
+                        <input type="text" class="enter-info" placeholder="Enter Your Name." id="name" required />
+                    </div>
+                    <div class="left1">
+                        <p id="lastname-label" class="label">Last Name *</p>
+                        <input type="text" class="enter-info" placeholder="Enter Your Last Name." id="lastname"
+                            required />
+                    </div>
+                    <div class="left1">
+                        <p id="idno-label" class="label">ID Number *</p>
+                        <input type="text" class="enter-info" placeholder="Enter Your ID Number." id="idno" required />
+                    </div>
+                    <div class="left1">
+                        <p id="tel-label" class="label">Telephone</p>
+                        <input type="text" class="enter-info" placeholder="Enter Your Telephone Number." id="tel" />
+                    </div>
+                    <div class="left1">
+                        <p>Please fill the blanks signed with * symbol.</p>
+                        <button class="e-button" id="e-person" onclick="">Update Person</button>
+                        <button class="add-button" id="add-person" onclick="addPerson();">Add Person</button>
+                    </div>
+                </form>
+            </div>
+
+            <div class="main-top-right">
+                <p class="card-info">Personal ID Card</p>
+                <div class="right1">
+                    <p id="id-label" class="label">ID</p>
+                    <input type="text" class="show-info" id="show-id" readonly />
+                </div>
+                <div class="right1">
+                    <p id="name-label" class="label">Name</p>
+                    <input type="text" class="show-info" id="show-name" readonly />
+                </div>
+                <div class="right1">
+                    <p id="lastname-label" class="label">Last Name</p>
+                    <input type="text" class="show-info" id="show-lastname" readonly />
+                </div>
+                <div class="right1">
+                    <p id="idno-label" class="label">ID Number</p>
+                    <input type="text" class="show-info" id="show-idno" readonly />
+                </div>
+                <div class="right1">
+                    <p id="tel-label" class="label">Telephone</p>
+                    <input type="text" class="show-info" id="show-tel" readonly />
+                </div>
+            </div>
+        </div>
+        <div class="main-bottom">
+            <div class="search">
+                <input type="text" placeholder="Search" class="searchbar" id="searchbar">
+                <button class="search-button" id="search-button" onclick=""><i class="fi fi-br-search"></i></button>
+            </div>
+            <table style="width: 100%;" id="mytable">
+                <tr class="table-info">
+                    <th id="no-table" class="first-row">No</th>
+                    <th id="id-table" class="first-row">ID</th>
+                    <th id="name-table" class="first-row">Name</th>
+                    <th id="lastname-table" class="first-row">Last Name</th>
+                    <th id="idnumber-table" class="first-row">ID Number</th>
+                    <th id="telephone-table" class="first-row">Phone</th>
+                    <th class="delete-cell" class="first-row">Delete</th>
+                    <th>Edit</th>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
